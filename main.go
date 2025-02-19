@@ -7,6 +7,11 @@ import (
 )
 
 func main() {
-	data := leetcode.TopKFrequent([]int{1, 1, 1, 2, 2, 3}, 2)
-	fmt.Println(data)
+	strs := []string{"neet", "code", "love", "you"}
+
+	encoded := leetcode.Encode(strs)
+	decoded := leetcode.Decode(encoded)
+
+	fmt.Println("Encoded:", encoded)
+	fmt.Println("Decoded:", decoded)
 }

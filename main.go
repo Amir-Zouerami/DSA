@@ -7,11 +7,9 @@ import (
 )
 
 func main() {
-	strs := []string{"neet", "code", "love", "you"}
+	nums := []int{1, 2, 3, 4}
 
-	encoded := leetcode.Encode(strs)
-	decoded := leetcode.Decode(encoded)
+	output := leetcode.ProductExceptSelf(nums)
 
-	fmt.Println("Encoded:", encoded)
-	fmt.Println("Decoded:", decoded)
+	fmt.Println("output:", output)
 }

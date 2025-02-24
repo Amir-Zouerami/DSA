@@ -1,22 +1,15 @@
 package main
 
 import (
+	"fmt"
+
 	leetcode "github.com/Amir-Zouerami/DSA/problems"
 )
 
 func main() {
-	minStack := leetcode.Constructor()
+	tokens := []string{"4", "13", "5", "/", "+"}
 
-	minStack.Push(-2)
-	minStack.Push(0)
-	minStack.Push(-3)
+	output := leetcode.EvalRPN(tokens)
 
-	minStack.GetMin()
-	minStack.Pop()
-	minStack.Top()
-	minStack.GetMin()
-
-	// output := leetcode.LongestConsecutive(nums)
-
-	// fmt.Println("output:", output)
+	fmt.Println("output:", output)
 }
